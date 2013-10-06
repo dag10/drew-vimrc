@@ -40,8 +40,9 @@ set smarttab
 set expandtab
 let g:indentLine_char = '|'
 let g:indentLine_color_term = 128
-set list lcs=tab:\|\ 
 
-" Highlight search things
-set hlsearch
+" Wrapping, side-scrolling
+set nowrap
+map <C-L> zl 
+map <C-H> zh 
 
