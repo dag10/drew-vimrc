@@ -38,7 +38,7 @@ set shiftwidth=2
 set softtabstop=2
 set smarttab
 set expandtab
-let g:indentLine_char = '┆'
+let g:indentLine_char = '|'
 let g:indentLine_color_term = 128
 set list lcs=tab:\|\ 
 
