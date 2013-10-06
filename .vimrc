@@ -5,10 +5,10 @@ set shell=/bin/bash
 set nocompatible
 
 " Vundle
-source .vimrc_vundle
+source ~/.vimrc_vundle
 
 " Bundles
-source .vimrc_bundles
+source ~/.vimrc_bundles
 
 " Enable mouse
 set mouse=a
