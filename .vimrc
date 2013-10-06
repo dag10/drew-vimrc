@@ -43,8 +43,6 @@ let g:indentLine_color_term = 128
 
 " Wrapping, side-scrolling
 set nowrap
-map <C-L> zl 
-map <C-H> zh 
 
 " Highlight search things
 set hlsearch
