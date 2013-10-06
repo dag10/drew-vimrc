@@ -42,3 +42,6 @@ let g:indentLine_char = '|'
 let g:indentLine_color_term = 128
 set list lcs=tab:\|\ 
 
+" Highlight search things
+set hlsearch
+
