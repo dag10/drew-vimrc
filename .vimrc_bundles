@@ -1,0 +1,13 @@
+" Bundles
+Bundle 'gmarik/vundle'
+Bundle 'flazz/vim-colorschemes'
+Bundle 'godlygeek/csapprox'
+Bundle 'pangloss/vim-javascript'
+Bundle 'rmanalan/jshint.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-surround'
+Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Yggdroot/indentLine'
+
