@@ -14,8 +14,8 @@ source ~/.vimrc_bundles
 set mouse=a
 
 " Relative line numbers
-set rnu
 set nu
+set rnu
 
 " Fix backspace
 set backspace=indent,eol,start
@@ -45,4 +45,7 @@ let g:indentLine_color_term = 128
 set nowrap
 map <C-L> zl 
 map <C-H> zh 
+
+" Highlight search things
+set hlsearch
 
