@@ -50,3 +50,7 @@ set nowrap
 " Highlight search things
 set hlsearch
 
+" When pressing return after typing a comment, don't automatically start a new
+" comment
+au FileType * setlocal formatoptions-=r
+
