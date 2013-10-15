@@ -39,7 +39,7 @@ set softtabstop=2
 set smarttab
 set expandtab
 let g:indentLine_char = '|'
-let g:indentLine_color_term = 128
+let g:indentLine_color_term = 239
 
 " Wrapping, side-scrolling
 set nowrap

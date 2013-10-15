@@ -10,4 +10,5 @@ Bundle 'tpope/vim-surround'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'Yggdroot/indentLine'
+Bundle 'octol/vim-cpp-enhanced-highlight'
 
