@@ -10,6 +10,9 @@ source ~/.vimrc_vundle
 " Bundles
 source ~/.vimrc_bundles
 
+" User files (optional)
+silent! source ~/.vimrc_user
+
 " Enable mouse
 set mouse=a
 
