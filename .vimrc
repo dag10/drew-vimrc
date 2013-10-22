@@ -57,3 +57,5 @@ au FileType * setlocal formatoptions-=r
 " When a macro is created on q, let space replay that macro
 noremap <Space> @q
 
+" Turn on spell checking to english
+set spell spelllang=en_us
