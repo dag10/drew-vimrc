@@ -59,3 +59,7 @@ noremap <Space> @q
 
 " Turn on spell checking to english
 set spell spelllang=en_us
+
+" Eliminate delay in switching modes
+set timeoutlen=1000 ttimeoutlen=0
+
