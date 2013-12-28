@@ -13,7 +13,6 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'Yggdroot/indentLine'
 Bundle 'octol/vim-cpp-enhanced-highlight'
 Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'Lokaltog/vim-distinguished'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'ervandew/supertab'
 
