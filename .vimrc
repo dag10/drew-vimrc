@@ -57,12 +57,16 @@ au FileType * setlocal formatoptions-=r
 " When a macro is created on q, let space replay that macro
 noremap <Space> @q
 
-" Turn on spell checking to english
-set spell spelllang=en_us
-
 " Eliminate delay in switching modes
 set timeoutlen=1000 ttimeoutlen=0
 
 " Highlight cursor line
 set cursorline
+
+" Disable spellchecking
+set nospell
+
+" File type aliases
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.less set filetype=css
 
