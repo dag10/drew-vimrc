@@ -68,4 +68,5 @@ set nospell
 
 " File type aliases
 au BufNewFile,BufRead *.ejs set filetype=jst
+au BufNewFile,BufRead *.less set filetype=less
 
