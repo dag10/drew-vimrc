@@ -67,6 +67,5 @@ set cursorline
 set nospell
 
 " File type aliases
-au BufNewFile,BufRead *.ejs set filetype=html
-au BufNewFile,BufRead *.less set filetype=css
+au BufNewFile,BufRead *.ejs set filetype=jst
 
