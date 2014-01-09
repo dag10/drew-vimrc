@@ -17,8 +17,8 @@ silent! source ~/.vimrc_user
 set mouse=a
 
 " Relative line numbers
-set rnu
 set nu
+set rnu
 
 " Fix backspace
 set backspace=indent,eol,start
