@@ -15,6 +15,7 @@ silent! source ~/.vimrc_user
 
 " Enable mouse
 set mouse=a
+set ttymouse=xterm2
 
 " Relative line numbers
 set nu
