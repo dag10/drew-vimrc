@@ -71,3 +71,7 @@ set nospell
 au BufNewFile,BufRead *.ejs set filetype=jst
 au BufNewFile,BufRead *.less set filetype=less
 
+" Fix Typescript
+au BufNewFile,BufRead *.ts set filetype=typescript
+au BufNewFile,BufRead *.ts set expandtab
+
