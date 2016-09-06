@@ -34,7 +34,7 @@ syntax on
 set laststatus=2
 
 " Ruler
-set colorcolumn=80
+set colorcolumn=81
 
 " Tabs
 set tabstop=2
