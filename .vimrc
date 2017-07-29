@@ -67,6 +67,10 @@ set cursorline
 " Disable spellchecking
 set nospell
 
+" Use C++11 for Syntastic
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
 " File type aliases
 au BufNewFile,BufRead *.ejs set filetype=jst
 au BufNewFile,BufRead *.less set filetype=less
