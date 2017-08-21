@@ -79,3 +79,10 @@ au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.ts set filetype=typescript
 au BufNewFile,BufRead *.ts set expandtab
 
+" Fix GLSL
+au BufNewFile,BufRead *.glsl set syntax=c
+au BufNewFile,BufRead *.glsl set expandtab
+au BufNewFile,BufRead *.glsl set autoindent
+au BufNewFile,BufRead *.glsl set cindent
+let g:syntastic_disabled_filetypes=['glsl']
+
