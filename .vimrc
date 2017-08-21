@@ -84,5 +84,6 @@ au BufNewFile,BufRead *.glsl set syntax=c
 au BufNewFile,BufRead *.glsl set expandtab
 au BufNewFile,BufRead *.glsl set autoindent
 au BufNewFile,BufRead *.glsl set cindent
+au BufNewFile,BufRead *.glsl set commentstring=//\ %s
 let g:syntastic_disabled_filetypes=['glsl']
 
