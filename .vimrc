@@ -43,7 +43,7 @@ highlight ColorColumn ctermbg=234
 
 " Split line
 set fillchars+=vert:│
-hi VertSplit ctermbg=234 guibg=NONE
+hi VertSplit ctermbg=237 ctermfg=239 guibg=NONE
 
 " Tabs
 set tabstop=2
