@@ -33,8 +33,17 @@ syntax on
 " Powerline
 set laststatus=2
 
+" Background
+highlight NonText ctermbg=234
+
 " Ruler
-set colorcolumn=81
+let &colorcolumn=join(range(81,999),",")
+"highlight ColorColumn ctermbg=235 guibg=#1c1d17
+highlight ColorColumn ctermbg=234
+
+" Split line
+set fillchars+=vert:│
+hi VertSplit ctermbg=234 guibg=NONE
 
 " Tabs
 set tabstop=2
