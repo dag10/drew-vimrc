@@ -17,6 +17,8 @@ Bundle 'ervandew/supertab'
 Bundle 'groenewege/vim-less'
 Bundle 'leafgarland/typescript-vim'
 Bundle 'jason0x43/vim-js-indent'
-
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+
