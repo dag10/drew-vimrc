@@ -30,9 +30,6 @@ let g:CSApprox_attr_map = { 'bold' : 'bold', 'italic' : '', 'sp' : '' }
 colorscheme obsidian
 syntax on
 
-" Powerline
-set laststatus=2
-
 " Background
 highlight NonText ctermbg=234
 
@@ -99,8 +96,53 @@ let g:syntastic_disabled_filetypes=['glsl']
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
-let g:airline_symbols.space = "\ua0"
 let g:airline_powerline_fonts=1
+function! AirLineDrew()
+  function! Modified()
+    return &modified ? " +" : ''
+  endfunction
+  function! ReadOnly()
+    if &readonly || !&modifiable
+      return ' '
+    else
+      return ''
+  endfunction
+
+  call airline#parts#define_raw('filename', '%<%f')
+  call airline#parts#define_function('modified', 'Modified')
+  call airline#parts#define_function('readonly', 'ReadOnly')
+
+  let g:airline_section_b = airline#section#create(['readonly', 'filename'])
+  let g:airline_section_c = airline#section#create([''])
+  let g:airline_section_gutter = airline#section#create(['modified', '%='])
+  let g:airline_section_x = airline#section#create_right([''])
+  let g:airline_section_y = airline#section#create(['%l / %L'])
+  let g:airline_section_z = airline#section#create(['branch'])
+endfunction
+autocmd Vimenter * call AirLineDrew()
+call AirLineDrew()
+let g:airline#extensions#default#section_truncate_width = {
+  \ 'x': 60,
+  \ 'y': 60
+  \ }
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V-L',
+  \ 'c'  : 'C',
+  \ '' : 'V-B',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC | AirlineRefresh
+    autocmd BufWritePost $MYVIMRC AirlineRefresh
+augroup END " }
 
 " Git gutter
 let g:gitgutter_sign_added = '·'
