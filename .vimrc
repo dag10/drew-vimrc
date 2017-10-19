@@ -38,7 +38,6 @@ highlight NonText ctermbg=234
 
 " Ruler
 let &colorcolumn=join(range(81,999),",")
-"highlight ColorColumn ctermbg=235 guibg=#1c1d17
 highlight ColorColumn ctermbg=234
 
 " Split line
@@ -111,5 +110,6 @@ let g:gitgutter_sign_removed_first_line = '·'
 let g:gitgutter_sign_modified_removed = '·'
 
 " Easymotion
+let mapleader = "\<Space>"
 map <Leader> <Plug>(easymotion-prefix)
 
