@@ -1,6 +1,3 @@
-" Fix shell
-set shell=/bin/bash
-
 " Not compatible with Vi
 set nocompatible
 
@@ -88,13 +85,17 @@ au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.ts set filetype=typescript
 au BufNewFile,BufRead *.ts set expandtab
 
+" Fix GLSL files for Graphics class (.vert, .frag)
+au BufNewFile,BufRead *.vert set filetype=glsl
+au BufNewFile,BufRead *.frag set filetype=glsl
+
 " Fix GLSL
-au BufNewFile,BufRead *.glsl set syntax=c
-au BufNewFile,BufRead *.glsl set expandtab
-au BufNewFile,BufRead *.glsl set autoindent
-au BufNewFile,BufRead *.glsl set cindent
-au BufNewFile,BufRead *.glsl set commentstring=//\ %s
-let g:syntastic_disabled_filetypes=['glsl']
+au BufNewFile,BufRead *.glsl,*.vert,*.frag set syntax=c
+au BufNewFile,BufRead *.glsl,*.vert,*.frag set expandtab
+au BufNewFile,BufRead *.glsl,*.vert,*.frag set autoindent
+au BufNewFile,BufRead *.glsl,*.vert,*.frag set cindent
+au BufNewFile,BufRead *.glsl,*.vert,*.frag set commentstring=//\ %s
+let g:syntastic_disabled_filetypes=['glsl', 'vert', 'frag']
 
 " Fix airline
 if !exists('g:airline_symbols')
