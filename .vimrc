@@ -75,7 +75,10 @@ let g:syntastic_style_error_symbol = '✠✠'
 let g:syntastic_warning_symbol = '∆∆'
 let g:syntastic_style_warning_symbol = '≈≈'
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+let g:syntastic_cpp_compiler_options = ' -std=c++1z -stdlib=libc++'
+let g:syntastic_always_populate_loc_list = 1
+nnoremap ]w :lnext<CR>
+nnoremap [w :lprevious<CR>
 
 " File type aliases
 au BufNewFile,BufRead *.ejs set filetype=jst
