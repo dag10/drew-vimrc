@@ -100,6 +100,13 @@ au BufNewFile,BufRead *.glsl,*.vert,*.frag set cindent
 au BufNewFile,BufRead *.glsl,*.vert,*.frag set commentstring=//\ %s
 let g:syntastic_disabled_filetypes=['glsl', 'vert', 'frag']
 
+" Fix EMJ
+au BufNewFile,BufRead *.emj set syntax=java
+au BufNewFile,BufRead *.emj set expandtab
+au BufNewFile,BufRead *.emj set autoindent
+au BufNewFile,BufRead *.emj set cindent
+au BufNewFile,BufRead *.emj set commentstring=//\ %s
+
 " Fix airline
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
