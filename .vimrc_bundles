@@ -22,4 +22,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'kana/vim-operator-user'
+Plugin 'rhysd/vim-clang-format'
 

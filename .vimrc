@@ -100,6 +100,13 @@ au BufNewFile,BufRead *.glsl,*.vert,*.frag set cindent
 au BufNewFile,BufRead *.glsl,*.vert,*.frag set commentstring=//\ %s
 let g:syntastic_disabled_filetypes=['glsl', 'vert', 'frag']
 
+" Fix Def (C definition headers)
+au BufNewFile,BufRead *.def set syntax=c
+au BufNewFile,BufRead *.def set expandtab
+au BufNewFile,BufRead *.def set autoindent
+au BufNewFile,BufRead *.def set cindent
+au BufNewFile,BufRead *.def set commentstring=//\ %s
+
 " Fix EMJ
 au BufNewFile,BufRead *.emj set syntax=java
 au BufNewFile,BufRead *.emj set expandtab
@@ -169,4 +176,15 @@ let g:gitgutter_sign_modified_removed = '·'
 " Easymotion
 let mapleader = "\<Space>"
 map <Leader> <Plug>(easymotion-prefix)
+
+" Clang-Format
+let g:clang_format#style_options = {
+      \ "AccessModifierOffset" : -4,
+      \ "AllowShortIfStatementsOnASingleLine" : "true",
+      \ "AlwaysBreakTemplateDeclarations" : "true",
+      \ "DerivePointerAlignment" : "false",
+      \ "PointerAlignment" : "Right",
+      \ "Standard" : "C++11"}
+let g:clang_format#code_style = "Google"
+autocmd FileType c,cpp,objc map <buffer> = <Plug>(operator-clang-format)
 
