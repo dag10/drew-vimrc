@@ -60,9 +60,6 @@ au FileType * setlocal formatoptions-=r
 " When a macro is created on q, let space replay that macro
 noremap <Space> @q
 
-" Eliminate delay in switching modes
-set timeoutlen=1000 ttimeoutlen=0
-
 " Highlight cursor line
 set cursorline
 
